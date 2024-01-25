@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,13 +23,19 @@
           }
         }
       </script>
+      <style>
+        body{
+          font-family: 'Lato', sans-serif;
+        }
+      </style>
 
 
 </head>
 <body>
         
 
-<header>
+<section class=" px-5 lg:px-0">
+  <header>
     <div class=" container mx-auto my-6 bg-red-500 rounded-full px-4 text-white" >
       <div class="navbar ">
         <div class="navbar-start">
@@ -49,7 +60,7 @@
           </div>
         </div>
         <div class="navbar-center hidden lg:flex">
-          <img src="./images/logo.png" alt="">
+          <img src="./images/logo.png" alt=""> <span class="font-bold text-2xl pl-2"> Fruit Burst</span>
         </div>
         <div class="navbar-end">
           <div class="bg-white flex justify-around py-2 px-3 lg:py-2 lg:px-3 rounded-full">
@@ -121,19 +132,58 @@
           </div>
         </div> 
       </div>
+      
     </div>
-    <div class="bg-white -translate-y-28 shadow-lg  mx-auto w-2/3 h-[20vh]  justify-center flex items-center">
-        <div class="flex items-center  gap-20 justify-between">
-          <img src="./images/fruit1.png" alt="">
-          <img src="./images/fruit2.png" alt="">
-          <img src="./images/fruit3.png" alt="">
-          <img src="./images/fruit4.png" alt="">
-          <img src="./images/fruit5.png" alt="">
+    <div class="bg-white lg:-translate-y-28 shadow-lg  mx-auto lg:w-2/3 h-[10vh]  lg:h-[20vh]  lg:justify-center flex items-center">
+        <div class="flex flex-wrap items-center justify-between  lg:gap-20 lg:justify-between">
+          <img class=" w-20 lg:w-auto " src="./images/fruit1.png" alt="">
+          <img class="w-20 lg:w-auto" src="./images/fruit2.png" alt="">
+          <img class="w-20 lg:w-auto" src="./images/fruit3.png" alt="">
+          <img class="w-20 lg:w-auto" src="./images/fruit4.png" alt="">
+          <img class="w-20 lg:w-auto" src="./images/fruit5.png" alt="">
         </div>
     </div>
-</header>
-<main>
+</section>
 
+
+</header>
+<main class="container mx-auto px-5 lg:px-0">
+<section class=" grid grid-cols-1 lg:grid-cols-2 my-16">
+  <div class="lg:w-2/4 flex justify-start mb-5">
+    <div class="space-y-4 ">
+      <h1 class="text-3xl lg:text-5xl font-extrabold">Deal of the day</h1>
+      <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+    </div>
+  </div>
+  <div class=" flex justify-start lg:justify-end">
+    <div class="grid grid-flow-col gap-10 text-center auto-cols-max">
+      <div class="flex flex-col">
+        <span class="countdown font-lato font-semibold text-3xl lg:text-5xl">
+          <span style="--value:15;"></span> :
+        </span>
+        days
+      </div> 
+      <div class="flex flex-col">
+        <span class="countdown font-lato font-semibold text-3xl lg:text-5xl">
+          <span style="--value:10;"></span> :
+        </span>
+        hours
+      </div> 
+      <div class="flex flex-col">
+        <span class="countdown font-lato font-semibold text-3xl lg:text-5xl">
+          <span style="--value:24;"></span> :
+        </span>
+        min
+      </div> 
+      <div class="flex flex-col">
+        <span class="countdown font-lato font-semibold text-3xl lg:text-5xl">
+          <span style="--value:39;"></span>
+        </span>
+        sec
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <footer>
 
